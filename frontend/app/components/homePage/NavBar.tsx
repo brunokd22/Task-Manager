@@ -41,7 +41,7 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 fixed w-full top-0 z-50">
+    <nav className="border-b bg-yellow-100 dark:bg-green-800 backdrop-blur supports-[backdrop-filter]:bg-yellow-100/60 dark:supports-[backdrop-filter]:bg-green-800/60 fixed w-full top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
