@@ -5,12 +5,13 @@ import {
   CheckCircle2,
   ChevronsLeft,
   ChevronsRight,
-  LayoutDashboard,
-  ListCheck,
+  NotepadTextDashed,
+  BookOpenCheck,
   LogOut,
-  Settings,
-  Users,
-  Wrench,
+  Cog,
+  UserRoundCog,
+  CircleUserRound,
+  LaptopMinimalCheck,
 } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router";
@@ -30,22 +31,22 @@ export const SidebarComponent = ({
     {
       title: "Dashboard",
       href: "/dashboard",
-      icon: LayoutDashboard,
+      icon: NotepadTextDashed,
     },
     {
       title: "Workspaces",
       href: "/workspaces",
-      icon: Users,
+      icon: CircleUserRound,
     },
     {
       title: "My Tasks",
       href: "/my-tasks",
-      icon: ListCheck,
+      icon: BookOpenCheck,
     },
     {
       title: "Members",
       href: `/members`,
-      icon: Users,
+      icon: UserRoundCog,
     },
     {
       title: "Achieved",
@@ -55,14 +56,14 @@ export const SidebarComponent = ({
     {
       title: "Settings",
       href: "/settings",
-      icon: Settings,
+      icon: Cog,
     },
   ];
 
   return (
     <div
       className={cn(
-        "flex flex-col border-r bg-green-50 transition-all duration-300",
+        "flex flex-col border-r  transition-all duration-300",
         isCollapsed ? "w-16 md:w[80px]" : "w-16 md:w-[240px]"
       )}
     >
@@ -70,14 +71,16 @@ export const SidebarComponent = ({
         <Link to="/dashboard" className="flex items-center">
           {!isCollapsed && (
             <div className="flex items-center gap-2">
-              <Wrench className="size-6 text-blue-600" />
+              <LaptopMinimalCheck className="size-6 text-blue-600" />
               <span className="font-semibold text-lg hidden md:block">
-                Task Manager
+                Tasks Manager
               </span>
             </div>
           )}
 
-          {isCollapsed && <Wrench className="size-6 text-blue-600" />}
+          {isCollapsed && (
+            <LaptopMinimalCheck className="size-6 text-blue-600" />
+          )}
         </Link>
 
         <Button
@@ -94,7 +97,7 @@ export const SidebarComponent = ({
         </Button>
       </div>
 
-      <ScrollArea className="flex-1 px-3 py-2 bg-amber-100">
+      <ScrollArea className="flex-1 px-3 py-2">
         <SidebarNav
           items={navItems}
           isCollapsed={isCollapsed}

@@ -77,7 +77,7 @@ const ResetPassword = () => {
           <CardContent>
             {isSuccess ? (
               <div className="flex flex-col items-center justify-center">
-                <CheckCircle className="w-10 h-10 text-green-500" />
+                <CheckCircle className="w-10 h-10 " />
                 <h1 className="text-2xl font-bold">
                   Password reset successful
                 </h1>

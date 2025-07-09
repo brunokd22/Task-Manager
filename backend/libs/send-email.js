@@ -3,10 +3,6 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-// sgMail.setApiKey(process.env.SEND_GRID_API);
-
-// const fromEmail = process.env.FROM_EMAIL;
-
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {

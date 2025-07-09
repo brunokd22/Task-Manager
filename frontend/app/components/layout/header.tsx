@@ -14,6 +14,7 @@ import {
 import { Avatar, AvatarImage, AvatarFallback } from "../ui/avatar";
 import { Link, useLoaderData, useLocation, useNavigate } from "react-router";
 import { WorkspaceAvatar } from "../workspace/workspace-avatar";
+import DarkModeToggler from "../homePage/DarkModeToggler";
 
 interface HeaderProps {
   onWorkspaceSelected: (workspace: Workspace) => void;
@@ -121,6 +122,7 @@ export const Header = ({
               <DropdownMenuItem onClick={logout}>Log Out</DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
+          <DarkModeToggler />
         </div>
       </div>
     </div>

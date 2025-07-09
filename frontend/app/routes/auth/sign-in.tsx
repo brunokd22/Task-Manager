@@ -58,7 +58,7 @@ const SignIn = () => {
     });
   };
   return (
-    <div className=" min-h-screen flex flex-col items-center justify-center bg-amber-200 text-blue-200 p-4">
+    <div className=" min-h-screen flex flex-col items-center justify-center  p-4">
       <Card className="max-w-md w-full shadow-xl">
         <CardHeader className="text-center mb-5">
           <CardTitle className="text-2xl font-bold">Welcome back</CardTitle>
