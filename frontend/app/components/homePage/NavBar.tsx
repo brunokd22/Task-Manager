@@ -55,7 +55,9 @@ const NavBar = () => {
               <div className="h-8 w-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                 <Logo size={"60"} />
               </div>
-              <span className="ml-2 text-xl font-bold">Task Manager</span>
+              <span className=" hidden lg:block ml-2 text-xl font-bold">
+                Task Manager
+              </span>
             </Button>
 
             {/* Desktop Navigation

@@ -14,9 +14,9 @@ const DarkModeToggler = () => {
   return (
     <Button className="px-2 py-3" onClick={handleToggleMode}>
       {theme == "dark" ? (
-        <Sun className="h-5 w-5" />
+        <Sun className=" p-0 h-3 w-3" />
       ) : (
-        <Moon className="h-5 w-5 " />
+        <Moon className="p-0 h-3 w-3 " />
       )}
     </Button>
   );

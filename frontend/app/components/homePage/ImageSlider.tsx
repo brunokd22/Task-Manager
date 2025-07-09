@@ -83,7 +83,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="w-full mb-8">
+    <div className="w-full mb-8 p-2 lg:px-10 ">
       <Card className="bg-black/20 dark:bg-black/40 backdrop-blur-lg border-white/10 overflow-hidden">
         <CardContent className="p-0">
           <div
